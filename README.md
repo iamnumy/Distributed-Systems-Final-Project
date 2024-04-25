@@ -17,28 +17,27 @@ This Voting System is a microservice-based web application designed for managing
 
 ## Directory Structure
 
-voting_system/
+Distributed-Systems-Final-Project/
 │
 ├── authentication_service/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
 │
 ├── voting_service/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
 │
 ├── results_service/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
+│   ├── app.py
+│   ├── Dockerfile
+│   └── requirements.txt
 │
 ├── cli/
-│ └── cli.py
+│   └── cli.py
 │
 └── docker-compose.yml
-
 
 
 
@@ -51,17 +50,12 @@ voting_system/
 ### Running the Application
 1. **Clone the Repository**
 
-git clone https://yourrepository.com/voting_system.git
-cd voting_system
-
+git clone https://github.com/iamnumy/Distributed-Systems-Final-Project.git
 
 
 2. **Build and Run the Docker Containers**
 
 docker-compose up --build
-
-
-
 
 This will start the microservices required for the application as specified in the `docker-compose.yml` file.
 
@@ -71,13 +65,9 @@ This will start the microservices required for the application as specified in t
 python cli/cli.py register <username> <password> <role>
 
 
-
-
 - **Login**
 
 python cli/cli.py login <username> <password>
-
-
 
 
 - **Cast a Vote**
@@ -85,11 +75,6 @@ python cli/cli.py login <username> <password>
 python cli/cli.py vote <user_id> <candidate_id> <token>
 
 
-
-
 - **View Results**
 
 python cli/cli.py results
-
-
-
