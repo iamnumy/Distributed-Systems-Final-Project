@@ -44,7 +44,7 @@ Each service folder contains:
 ### Running the Application
 1. **Clone the Repository**
    ```bash
-   git clone https://yourrepository.com/voting_system.git
+   git clone https://github.com/iamnumy/Distributed-Systems-Final-Project.git
 
 
 2. **Build and Run the Docker Containers**
