@@ -22,26 +22,6 @@ This Voting System is a microservice-based web application designed for managing
 
 ## Directory Structure
 
-Below is the file organization for the Voting System project:
-
-Distributed-Systems-Final-Project/
-├── authentication_service/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
-├── voting_service/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
-├── results_service/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
-├── cli/
-│ └── cli.py
-└── docker-compose.yml
-
-
 This structure lays out the main components:
 - **Authentication Service**: Manages user authentication and stores user details.
 - **Voting Service**: Handles voting logic, including validating and recording votes.
