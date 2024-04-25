@@ -17,27 +17,37 @@ This Voting System is a microservice-based web application designed for managing
 
 ## Directory Structure
 
+Below is the file organization for the Voting System project:
+
 Distributed-Systems-Final-Project/
-│
 ├── authentication_service/
-│   ├── app.py
-│   ├── Dockerfile
-│   └── requirements.txt
-│
+│ ├── app.py
+│ ├── Dockerfile
+│ └── requirements.txt
 ├── voting_service/
-│   ├── app.py
-│   ├── Dockerfile
-│   └── requirements.txt
-│
+│ ├── app.py
+│ ├── Dockerfile
+│ └── requirements.txt
 ├── results_service/
-│   ├── app.py
-│   ├── Dockerfile
-│   └── requirements.txt
-│
+│ ├── app.py
+│ ├── Dockerfile
+│ └── requirements.txt
 ├── cli/
-│   └── cli.py
-│
+│ └── cli.py
 └── docker-compose.yml
+
+
+This structure lays out the main components:
+- **Authentication Service**: Manages user authentication and stores user details.
+- **Voting Service**: Handles voting logic, including validating and recording votes.
+- **Results Service**: Computes and displays voting results.
+- **CLI**: Command Line Interface for interacting with the services.
+- **Docker Compose**: Defines and runs multi-container Docker applications.
+
+Each service folder contains:
+- `app.py`: The Flask application.
+- `Dockerfile`: Instructions for Docker to build the service containers.
+- `requirements.txt`: Lists dependencies to be installed within the Docker containers.
 
 
 ## Setup and Installation
