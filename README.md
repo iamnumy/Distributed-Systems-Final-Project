@@ -49,32 +49,32 @@ Distributed-Systems-Final-Project/
 
 ### Running the Application
 1. **Clone the Repository**
-
+   ```bash
 git clone https://github.com/iamnumy/Distributed-Systems-Final-Project.git
 
 
 2. **Build and Run the Docker Containers**
-
+   ```bash
 docker-compose up --build
 
 This will start the microservices required for the application as specified in the `docker-compose.yml` file.
 
 ### Using the CLI
 - **Register a User**
-
+   ```bash
 python cli/cli.py register <username> <password> <role>
 
 
 - **Login**
-
+   ```bash
 python cli/cli.py login <username> <password>
 
 
 - **Cast a Vote**
-
+   ```bash
 python cli/cli.py vote <user_id> <candidate_id> <token>
 
 
 - **View Results**
-
+   ```bash
 python cli/cli.py results
