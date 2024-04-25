@@ -1,4 +1,9 @@
-# Voting System
+# Disributed Voting System
+
+## Group members
+- **Muhammad Hamza Khan**
+- **Usairum Mirza**
+- **Nouman Noor**
 
 ## Overview
 This Voting System is a microservice-based web application designed for managing elections. It supports roles for candidates and voters, allowing registered voters to cast votes for the eligible candidates.
