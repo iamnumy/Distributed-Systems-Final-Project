@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: distributed_voting_system
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  authentication_service:
+    build: ./authentication_service
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mysql
+
+  voting_service:
+    build: ./voting_service
+    ports:
+      - "5002:5002"
+      - "18861:18861" # Expose the RPC port
+    depends_on:
+      - mysql
+
+  results_service:
+    build: ./results_service
+    ports:
+      - "5003:5003"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql-data:
