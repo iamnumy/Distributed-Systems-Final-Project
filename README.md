@@ -76,5 +76,5 @@ python cli/cli.py vote <user_id> <candidate_id> <token>
 
 
 - **View Results**
-   ```bash
-python cli/cli.py results
+   ```bash python cli/cli.py results
+
